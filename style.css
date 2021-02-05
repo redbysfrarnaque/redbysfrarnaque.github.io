@@ -153,6 +153,12 @@ nav button:active {
     margin: var(--gap-medium) auto;
 }
 
+.content-2 {
+    max-width: 1280px;
+    width: 100%;
+    margin: var(--gap-medium) auto;
+}
+
 .content__img {
     width: 100%;
 }
@@ -261,5 +267,75 @@ button:active {
 
 footer {
     background-color: var(--neutral-color);
-    min-height: 200px;
+    min-height: 50px;
+}
+
+.content-2 p {
+    margin-top: var(--gap-medium);
+}
+
+.content-2 p b {
+    font-weight: 700;
+}
+
+.block {
+    margin-top: var(--gap-medium);
+    background-color: #fff;
+    padding: var(--gap-medium);
+}
+
+.arnaque-step {
+    margin-top: var(--gap-medium);
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.arnaque-step span {
+    color: var(--neutral-color);
+}
+
+.step {
+    width: 50px;
+    height: 50px;
+    font-size: 2.5rem;
+    color: #fff;
+    background-color: var(--neutral-color);
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--gap-medium) auto;
+}
+
+.step__text {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.date {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: var(--gap-large);
+}
+
+.action {
+    text-align: center;
+}
+
+.preuves {
+    margin-top:var(--gap-medium);
+    text-align: center;
+}
+
+.preuve {
+    opacity: 0.7;
+    cursor: pointer;
+    height: 200px;
+}
+
+.preuve:hover {
+    opacity: 1;
 }
