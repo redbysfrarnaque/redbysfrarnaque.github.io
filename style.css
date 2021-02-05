@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:root {
+    --main-color: #fff;
+    --sub-color: #f2f2f2;
+    --neutral-color: #54e093;
+    --neutral-color-dark-1: #369361;
+    --neutral-color-dark-2: #28714a;
+    --text-color: #18171a;
+    --gap-little: 10px;
+    --gap-medium: 20px;
+    --gap-large: 30px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    font-size: 1.6rem;
+    background-color: var(--sub-color);
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+header {
+    background-color: var(--neutral-color);
+    padding: var(--gap-medium);
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header p {
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: var(--gap-little);
+}
+
+nav button {
+    margin-top: 0;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    width: auto;
+}
+
+nav button:hover {
+    transition: initial;
+    background-color: #eee;
+}
+
+nav button:active {
+    transition: initial;
+    background-color: #ccc;
+}
+
+.banner {
+    background-color: var(--main-color);
+    padding: var(--gap-large) var(--gap-medium);
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    color: #404040;
+}
+
+.count {
+    border-bottom: 4px solid #404040;
+}
+
+.banner p {
+    display: block;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: var(--gap-medium);
+}
+
+.banner p span {
+    color: var(--neutral-color);
+    font-weight: 700;
+}
+
+.content {
+    display: flex;
+    max-width: 1280px;
+    width: 100%;
+    margin: var(--gap-medium) auto;
+}
+
+.content__img {
+    width: 100%;
+}
+
+article {
+    flex: 1;
+    font-size: 2rem;
+    line-height: 1.5;
+    background-color: var(--main-color);
+    padding: var(--gap-medium);
+    box-sizing: border-box;
+}
+
+article p {
+    margin-top: var(--gap-medium);
+}
+
+article p:first-child {
+    margin-top: 0;
+}
+
+aside {
+    margin-left: var(--gap-medium);
+    max-width: 300px;
+    width: 100%;
+}
+
+.aside__content {
+    position: -webkit-sticky;
+    position: sticky;
+    top: var(--gap-medium);
+    left: 0;
+    background-color: var(--main-color);
+    padding: var(--gap-medium);
+    box-sizing: border-box;
+}
+
+.signature {
+    display: block;
+    text-align: center;
+}
+
+.signature b {
+    font-weight: 700;
+}
+
+.progress {
+    height: 20px;
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    background-color: var(--sub-color);
+    margin-top: var(--gap-little);
+}
+
+.progress-bar {
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    background: linear-gradient(135deg, var(--neutral-color) 0%, var(--neutral-color-dark-1) 100%);
+    height: 20px;
+}
+
+input {
+    border: 1px solid #D6D6D6;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    padding: var(--gap-little);
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: var(--gap-little);
+    outline: none;
+}
+
+input::placeholder {
+    color: #666666;
+}
+
+button {
+    background-color: var(--neutral-color);
+    color: var(--main-color);
+    border: none;
+    padding: var(--gap-little) var(--gap-large);
+    margin-top: var(--gap-medium);
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    transition: all .4s ease-in;
+    background-color: var(--neutral-color-dark-1);
+}
+
+button:active {
+    transition: all .1s ease-in;
+    background-color: var(--neutral-color-dark-2);
+}
+
+.info {
+    margin-top: var(--gap-medium);
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
