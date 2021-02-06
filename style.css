@@ -272,6 +272,12 @@ footer {
 
 .content-2 p {
     margin-top: var(--gap-medium);
+    line-height: 1.4;
+}
+
+.content-2 p a {
+    color: var(--neutral-color-dark-1);
+    font-weight: 700;
 }
 
 .content-2 p b {
